@@ -7,7 +7,7 @@ h1,h2,h3{
     border-radius: 30%;
     font-variant: small-caps;
     text-align: center;
-    text-decoration: underline double;
+    
 }
 p{
     color: black;
@@ -23,9 +23,11 @@ div.transbox{
     display: block;
     width:1090px;
     height: 920px;
-    opacity:0.4;
+    opacity:0.8;
     background-color:#ffffff;
     border-radius: 5%;
+    background-color: aqua;
+
     
 }
 div.content{
@@ -39,7 +41,7 @@ div.content{
     background-color: #ffffff;
     opacity:1;
     border-radius: 3%;
-    border: solid 5px black;
+    border: solid 5px red;
   
 }
 .name{
