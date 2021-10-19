@@ -40,11 +40,17 @@ div.content{
     margin-right: auto;
     background-color: #ffffff;
     opacity:1;
-    border-radius: 3%;
-    border: solid 5px red;
+    border-radius: 2%;
+    border: double 15px red;
   
 }
 .name{
    text-align: right; 
    font-size: larger;
+}
+img{
+    border:dotted 5px blue;
+    padding: 2px;
+    border-radius: 10%;
+    
 }
