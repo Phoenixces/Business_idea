@@ -1,31 +1,45 @@
 p{
+    
+    font-size:1vw;
     text-align: center;
     font-family: cursive;
-    font-size: larger;
-    font-weight: bolder;
+    font-weight:bolder;
 }
+
+p:hover{
+    cursor: pointer;
+}
+
 .bottom{
-    display: block;
+    display:flexbox;
     margin-left: auto;
     margin-right: auto;
     background-color:whitesmoke;
     padding: 10px;
     border:double 10px  gray;
+    border-radius: 20%;
+    text-align: center;
 }
+
 .top{
+    display: flexbox;
+    text-align: center;
+    width: auto;
+    height: auto;
     background-color:whitesmoke;
     padding: 10px;
     border:double 10px  gray;
+    border-radius: 20%;
 }
 .container{
     background:url(https://images.pexels.com/photos/3308588/pexels-photo-3308588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) ;
-    border-radius: 10%;
+    border-radius:5%;
     border:10px solid aqua;
-    display: block;
+    display:flexbox;
     margin-left: auto;
     margin-right: auto;
-    width: 1580px;
-    height:800px;
+    width:90%;
+    height:auto;
 
 }
 h1.Header::first-letter{
@@ -36,29 +50,31 @@ font-weight: bolder;
 }
 
 .Header{
-    padding-left: 50px;
+    font-size:3vw;
     border: solid 10px red;
     border-radius: 20%;
     background-color: black;
-    display: block;
+    display: flexbox;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width:auto;
+    text-align: center;
     color:beige;
     font-family: cursive;
-    font-size: 48px;
     text-decoration: double underline white;
     padding-bottom: 10px;
 }
 h2{
-    font-size:30px;
+    font-size:2vw;
     font-family: cursive;
     font-weight: bolder;
     color: wheat;
     background-color: black;
-    width: 400px;
+    width:auto;
+    text-decoration: underline;
     
  }
+ 
  h1:hover{
     color:yellowgreen;
     
@@ -68,11 +84,13 @@ body{
     font-family: arial;
 }
 div.thumbnails img{
-    width: 150px;
+    width:100px;
     height: 100px;
     border: 3px dotted aqua;
     margin: 0 10px 10px 0; 
     border-radius: 10%;
+    max-width:100%;
+    
 
 }
 .thumbnails img:hover{
@@ -85,22 +103,31 @@ div.thumbnails img{
     border:4px dotted aqua;
     border-radius: 10%;
     padding: 1px;
-    width:400px;
-    height: 400px;
+    width: 300px;
+    height:300px;
+    max-width:100%;
+    
     
 }
 a{
-    width: 150px;
-    height: 200px;
-    font-size: 20px;
-    background-color: gray;
+    width: auto;
+    height: auto;
+    font-size:1vw;
+    background-color:white;
     color: black;
     padding: 10px;
     margin:0 10px 10px 0;
     font-family: cursive;  
     text-align: center; 
+    
 }
 a:hover{
-    background-color: white;
+    background-color:bisque;
     color: black;
 }
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    .top,.container,.thumbnails,.preview{
+      width: 100%;
+    }
+  }
